@@ -1,0 +1,351 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+body {
+	background: url(../img/fundo.png) repeat-x fixed;
+	background-color:#94B2A2;
+	margin:0;
+	font-family:Tahoma, Arial, Helvetica, sans-serif
+}
+* {
+	margin:0;
+	padding:0;
+}
+
+a {
+	color:inherit;
+	text-decoration:none;
+}
+
+a:link {
+	text-decoration:none;
+	color:#E8F0EB;
+}
+
+a:visited {
+	text-decoration:none; 
+	color:#E8F0EB;
+}
+
+a:active {
+	text-decoration:none; 
+	color:#E8F0EB;
+}
+
+ul { list-style:none; }
+
+h1, h2 {
+	text-transform:none;
+	font-size:inherit;
+}
+
+div#Header {
+	background-color:#1A5C38;
+	height:160px;
+	width:100%;
+	border-bottom: 2px solid #E8F0EB;
+}
+
+div#HeaderCenter {
+	height:100%;
+	position:relative;
+	left:15%;
+	width:70%;
+	min-width:700px;
+	z-index:4;
+}
+
+div#HeaderLogo {
+	z-index:10;
+	width:264;
+	float:left;
+}
+
+img#HeaderLogoIMG {
+	height:200px;
+	width:264px;
+	border:none;
+}
+
+div#HeaderMenu {
+	background-color:#005128;
+	float:left;
+	height:30px;
+	position:relative;
+	top:130px;
+	width:385px;
+	border-top:1px solid #F7EB02;
+	font-size:16px;
+}
+
+div#HeaderMenu ul {
+	height:30px;
+	line-height:30px;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin:0;
+	width:385px;
+	padding-left:0px;
+}
+
+div#HeaderMenu ul li {
+	float:left;
+	text-align:center;
+	color:#E8F0EB;
+	border-right: solid 1px #F7EB02;
+	height:30px;
+}
+
+div#HeaderMenu ul li a { 
+	padding-top:3px; 
+	padding-bottom:4px; 
+}
+
+li#HeaderMenuHome {
+	width:82px;
+	border-left: solid 1px #F7EB02;
+}
+
+
+li#HeaderMenuHome a{
+	padding-left:19px;
+	padding-right:17px;
+}
+li#HeaderMenuCardapio { width: 100px; }
+
+li#HeaderMenuCardapio a{
+	padding-left:18px;
+	padding-right:17px;
+}
+
+li#HeaderMenuLocalizacao { width:118px; }
+
+li#HeaderMenuLocalizacao a{
+	padding-left:16px;
+	padding-right:16px;
+}
+
+li#HeaderMenuFotos {
+	width:80px;
+	cursor:default;
+	
+}
+
+
+
+div#HeaderMenuPedido {
+	float:left;
+	height:30px;
+	left:1px;
+	position:relative;
+	top:129px;
+	
+}
+
+li a:hover{
+	color:#ff0000 !important;
+}
+
+li#HeaderMenuLocalizacao:hover,li#HeaderMenuCardapio:hover,li#HeaderMenuHome:hover {
+	background-color:#e8f0eb;
+	
+}
+
+
+li.HeaderMenuItemAtivo {
+	
+	background-color:#E8F0EB !important;
+	border-bottom: solid 1px #E8F0EB;
+}
+
+li.HeaderMenuItemAtivo a{
+	color:#001A00 !important;
+}
+
+li.HeaderMenuItemAtivo a:hover{
+	color:#ff0000 !important;
+}
+
+
+li#HeaderMenuFotos:hover div.EmBreve { 
+	display:block; 
+
+}
+
+div.EmBreve {
+	background-image:url(../img/balaoEmBreve.png);
+	display:none;
+	height:45px;
+	left:45px;
+	position:relative;
+	top:-65px;
+	width:102px;
+	line-height:30px;
+}
+
+div#ContentContainer {
+	background-color:#E8F0EB;
+	height:auto;
+	min-height:400px;
+	left:18%;
+	min-width:700px;
+	position:relative;
+	width:64%;
+	z-index:1;
+	padding-bottom:25px;
+	color:#101010;
+	font-size:20px;
+}
+
+div.Content {
+	padding-top:45px;
+	width:80%;
+	position:relative;
+	left:10%;
+	min-width:600px;
+}
+
+div#Rodade {
+	width: 100%;
+	height: 120px;
+	position:relative;
+	font-size:20px;
+	margin-top:3px;
+}
+
+div#RodapeCenter {
+	background-color:#41775A;
+	height:100%;
+	left:18%;
+	min-width:700px;
+	position:relative;
+	width:64%;
+}
+
+div#RodapeContainer {
+	color:#FFFF22;
+	height:100%;
+	left:10%;
+	min-width:600px;
+	padding-top:5px;
+	line-height:22px;
+	position:relative;
+	width:80%;
+	text-align:center;
+	font-size: 15px;
+}
+div#RodapeContainer dt {
+	display: none;
+}
+div#RodapeContainer .filial{
+	float:left;
+	width: 100%;
+	padding-top:20px;
+}
+
+
+div#ContentTextoHome { }
+
+#ContentCardapio { font-size:16px; }
+
+div.CardapioTitulo {
+	text-align:center;
+	font-size:28px;
+	position:relative;
+	padding-bottom: 20px;
+	width:100%;
+}
+
+li.ItemCarpadio {
+	margin-bottom:10px;
+	height:40px;
+	width:100%;
+	line-height:40px;
+	z-index:3;
+}
+
+div.ItemCardapio {
+	width:auto;
+	height:auto;
+	z-index:30;
+}
+
+ul#ListaCardapioSalgadas { margin-bottom:30px; }
+
+ul#ListaCardapioSalgadas li { background-color:#D1EFDF; }
+
+div.ItemCardapioNome {
+	float:left;
+	width: 230px;
+	text-align:center;
+	position: relative;
+	height: 40px;
+}
+
+div.ItemCardapio:hover {
+	background:#006600 !important;
+	margin-bottom:10px;
+	height:38px;
+	width:100%;
+	line-height:38px;
+	border: 1px solid #F1EB05;
+	color:#E8F0EB;
+}
+
+div.ItemCardapioIngredientes {
+	text-align:center;
+	margin-left:230px;
+	position: relative;
+	width:300px;
+}
+
+.line_height_20 { line-height:20px; }
+
+ul#ListaCardapioDoces { margin-bottom:20px; }
+
+ul#ListaCardapioDoces li { background-color:#D1EFDF; }
+
+.CardapioSaborDoce {
+	margin-bottom:10px;
+	height:40px;
+	width:100%;
+	line-height:40px;
+	text-align:center;
+}
+
+#LocalizacaoZonaSul {
+	height:400px;
+	left:10%;
+	min-width:600px;
+	position:relative;
+	width:80%;
+	margin-top:15px;
+}
+
+#LocalizacaoZonaNorte {
+	height:400px;
+	left:10%;
+	min-width:600px;
+	position:relative;
+	width:80%;
+	margin-top:30px;
+}
+
+.LocalizacaoMapa {
+	height:350px;
+	width:600px;
+}
+
+#LocalizacaoContainer {
+	position:relative;
+	padding-top:30px;
+}
+
+div.LocalizacaoZonaTitulo {
+	text-align:center;
+	margin-bottom:20px;
+}
+
+
